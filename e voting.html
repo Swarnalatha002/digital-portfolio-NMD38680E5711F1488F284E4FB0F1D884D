@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Voting System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .candidate {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-Voting System</h1>
+    </header>
+    <div class="container">
+        <h2>Choose Your Candidate</h2>
+        <div class="candidate">
+            <p>Candidate A</p>
+            <button onclick="vote('A')">Vote for A</button>
+        </div>
+        <div class="candidate">
+            <p>Candidate B</p>
+            <button onclick="vote('B')">Vote for B</button>
+        </div>
+        <div class="candidate">
+            <p>Candidate C</p>
+            <button onclick="vote('C')">Vote for C</button>
+        </div>
+        <h2>Results</h2>
+        <p>Vote counts and results will be displayed here.</p>
+    </div>
+
+    <script>
+        // This is a simplified client-side voting function
+        function vote(candidate) {
+            // You would typically send the vote to the server for processing here
+            // For a real e-voting system, server-side validation and storage are essential
+            alert("You voted for Candidate " + candidate);
+        }
+    </script>
+</body>
+</html>
